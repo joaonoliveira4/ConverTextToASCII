@@ -10,7 +10,7 @@
                 if ($cad == "DEC") {
                     if ($tex[$i] == "A") {
                         echo(" "."65");
-                    }
+                    }   
                     elseif($tex[$i] == "B"){
                         echo(" "."66");
                     }

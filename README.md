@@ -1,5 +1,5 @@
 # ConverTextToASCII
-Um site simples para converter textos para a tabela ASCII, iniciado em PHP mas completamente reestruturado em JavaScript.
+Um sistema simples para converter textos para a tabela ASCII, iniciado em PHP mas completamente reestruturado em JavaScript. É um projeto pessoal antigo, mas que ainda pretendo adicionar muitas coisas, principalmente design e quiçá ReactJS.
 
 ## Documentação:
 #### Estarei também disponibilizando as funções para que possam utilizar em seus projetos.
