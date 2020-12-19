@@ -6,7 +6,6 @@ enviar = () => {
     let txtF = "";
     let txtSeparado = tex.split("");
 
-    nCaracteres = tex.length;
 
     for (let i = 0; i <= tex.length; i++) {
         if (txtSeparado[i] == "A") {
