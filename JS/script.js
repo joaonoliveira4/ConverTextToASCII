@@ -1,15 +1,15 @@
 const inputTexto = document.getElementById("texto");
 const ab = document.getElementById("ab");
-let selecionado = document.getElementById("selecao");
-var select = selecionado.options[selecionado.selectedIndex].value;
+var selector = document.getElementById('selecao');
+var value = selector[selector.selectedIndex].value;
 
 enviar = function () {
     let tex = inputTexto.value;
     let txtF = "";
     let txtSeparado = tex.split("");
+    let tx
 
-    if (select == 1) {
-
+    if (value = 3) {
         for (let i = 0; i <= tex.length; i++) {
             
             if (txtSeparado[i] == "A") {
@@ -207,7 +207,7 @@ enviar = function () {
             }
         }
 
-    } else if (select == 2) {
+    } else if (value = 4) {
 
         for (let i = 0; i <= tex.length; i++) {
             if (txtSeparado[i] == "A") {
@@ -405,7 +405,7 @@ enviar = function () {
             }
         }
 
-    } else if (select == 3) {
+    } else {
         for (let i = 0; i <= tex.length; i++) {
             if (txtSeparado[i] == "A") {
                 txtF = txtF + "01000001 ";
