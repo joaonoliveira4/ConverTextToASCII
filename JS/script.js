@@ -1,17 +1,21 @@
-const inputTexto = document.getElementById("texto");
-const ab = document.getElementById("ab");
-var selector = document.getElementById('selecao');
-var value = selector[selector.selectedIndex].value;
+const inputTexto = document.querySelector('input');
+var valor = document.querySelector('select');
 
-enviar = function () {
+document.addEventListener('keypress', function(e) {
+    if (e.which == 13) {
+        converter();
+    }
+}, false);
+
+converter = function() {
+    let val = valor.value;
     let tex = inputTexto.value;
     let txtF = "";
     let txtSeparado = tex.split("");
-    let tx
 
-    if (value = 3) {
+    if (val === '0') {} else if (val === '1') {
         for (let i = 0; i <= tex.length; i++) {
-            
+
             if (txtSeparado[i] == "A") {
                 txtF = txtF + "65 ";
                 ab.innerHTML = txtF;
@@ -171,10 +175,7 @@ enviar = function () {
             } else if (txtSeparado[i] == "z") {
                 txtF = txtF + "122 ";
                 ab.innerHTML = txtF;
-            }
-
-
-            else if (txtSeparado[i] == 0) {
+            } else if (txtSeparado[i] == 0) {
                 txtF = txtF + "48 ";
                 ab.innerHTML = txtF;
             } else if (txtSeparado[i] == 1) {
@@ -207,7 +208,7 @@ enviar = function () {
             }
         }
 
-    } else if (value = 4) {
+    } else if (val === '2') {
 
         for (let i = 0; i <= tex.length; i++) {
             if (txtSeparado[i] == "A") {
@@ -369,10 +370,7 @@ enviar = function () {
             } else if (txtSeparado[i] == "z") {
                 txtF = txtF + "86 ";
                 ab.innerHTML = txtF;
-            }
-
-
-            else if (txtSeparado[i] == 0) {
+            } else if (txtSeparado[i] == 0) {
                 txtF = txtF + "30 ";
                 ab.innerHTML = txtF;
             } else if (txtSeparado[i] == 1) {
@@ -405,7 +403,7 @@ enviar = function () {
             }
         }
 
-    } else {
+    } else if (val === '3') {
         for (let i = 0; i <= tex.length; i++) {
             if (txtSeparado[i] == "A") {
                 txtF = txtF + "01000001 ";
@@ -566,10 +564,7 @@ enviar = function () {
             } else if (txtSeparado[i] == "z") {
                 txtF = txtF + "01111010 ";
                 ab.innerHTML = txtF;
-            }
-
-
-            else if (txtSeparado[i] == 0) {
+            } else if (txtSeparado[i] == 0) {
                 txtF = txtF + "00110000 ";
                 ab.innerHTML = txtF;
             } else if (txtSeparado[i] == 1) {
@@ -610,5 +605,3 @@ enviar = function () {
 
 
 };
-
-

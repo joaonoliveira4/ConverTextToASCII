@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Conversor de textos</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
 
-    <body>
-        <div id="ab"></div>
-        <label>Digite o texto que deseja converter:</label><br> 
-        <input type="text" id="texto" name="texto" placeholder="Texto"/><br>
-        <select  id="selecao">
-            <option value="2">Decimal</option>
-            <option value="3">Hexadecimal</option>
-            <option value="4">Binário</option>
+<head>
+    <title>Conversor de textos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <label>Digite o texto que deseja converter:</label><br>
+    <input type="text" id="inputTexto" name="inputTexto" placeholder="Texto" /><br>
+    <select id="selecao" name="selecao">
+            <option value="0">Selecione</option>
+            <option value="1">Decimal</option>
+            <option value="2">Hexadecimal</option>
+            <option value="3">Binário</option>
         </select>
-        <button onclick="enviar()">Enviar</button>
+    <button onclick="converter()">Enviar</button>
+    <div id="ab"></div>
 
-        
 
-        <script src="JS/script.js"></script>
-    </body>
+
+    <script src=" JS/script.js "></script>
+</body>
+
 </html>
