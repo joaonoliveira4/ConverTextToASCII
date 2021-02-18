@@ -4,14 +4,19 @@ var valor = document.querySelector('select');
 document.addEventListener('keypress', function(e) {
     if (e.which == 13) {
         converter();
+        // Verifica se o 'Enter' foi pressionado e executa a função;
     }
 }, false);
 
-converter = function() {
+exports.converter = function() {
     let val = valor.value;
-    let tex = inputTexto.value;
+    // 'valor' é o valor que 'val' vai receber do 'select', dentro do HTML;
+    let tex = input.value;
+    // 'tex' recebe o texto de 'input', de dentro do HTML;
     let txtF = "";
+    // Texto final, que será exibido;
     let txtSeparado = tex.split("");
+    // Separa a 'String' em pedaços, se baseando em caractere por caractere;
 
     if (val === '0') {} else if (val === '1') {
         for (let i = 0; i <= tex.length; i++) {
@@ -604,4 +609,5 @@ converter = function() {
 
 
 
+};
 };
