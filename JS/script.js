@@ -5,6 +5,7 @@ const valor = document.querySelector('select');
 // Pega o valor do seletor e atribui a variável
 
 const ab = document.getElementById('ab');
+// Atribui a variável ao elemento do HTML
 
 
 function converter() { 
@@ -20,11 +21,15 @@ function converter() {
     if (val === '0') {
         alert("Você não selecionou")
     } else if (val === '1') {
+        // Seleciona decimal para conversão;
         for (let i = 0; i <= tex.length; i++) {
+            // Roda o for até converter cada letra digitada;
 
             if (txtSeparado[i] == "A") {
                 txtF = txtF + "65 ";
+                // Adiciona o valor do número correspondente a letra à variável
                 ab.innerHTML = txtF;
+                // Escreve a variável no HTML
             } else if (txtSeparado[i] == "B") {
                 txtF = txtF + "66 ";
                 ab.innerHTML = txtF;
@@ -215,7 +220,7 @@ function converter() {
         }
 
     } else if (val === '2') {
-
+        // Seleciona hexadecimal para conversão;
         for (let i = 0; i <= tex.length; i++) {
             if (txtSeparado[i] == "A") {
                 txtF = txtF + "41 ";
@@ -410,6 +415,7 @@ function converter() {
         }
 
     } else if (val === '3') {
+        // Seleciona binário para conversão;
         for (let i = 0; i <= tex.length; i++) {
             if (txtSeparado[i] == "A") {
                 txtF = txtF + "01000001 ";
